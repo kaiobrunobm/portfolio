@@ -10,8 +10,6 @@
 /* -------------------------------NAVBAR----------------------------------- */
 body {
     background: white;
-    width: 100vw;
-
 }
 .header {
     display: flex;
