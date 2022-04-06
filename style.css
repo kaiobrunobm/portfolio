@@ -537,6 +537,22 @@ body {
         display: flex;
         flex-wrap: wrap
     }
+
+    .footer-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:473px) {
+
+    .about-me-p {
+        font-size:10px;
+    }
+
+    .resume-img {
+        height:230px
+    }
+
 }
 
 .language {
