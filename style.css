@@ -11,6 +11,8 @@
 /* -------------------------------NAVBAR----------------------------------- */
 body {
     background: white;
+    width: 100vw;
+
 }
 .header {
     display: flex;
@@ -94,7 +96,7 @@ body {
     justify-content: center;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
 }
-.nav-itens:nth-last-child(1):hover {
+.nav-itens:nth-last-child(2):hover {
     color: white;
     font-weight: 600;
     background-color:#0e0bd4c7 ;
@@ -331,6 +333,9 @@ body {
     .header {
         display: flex;
     }
+    .projects {
+        width: 100vw;
+    }
 }
 
 
@@ -424,7 +429,74 @@ body {
     .nav-bar {
         display:flex;
         height: 15vh;
+    }   
+
+    .home h1 {
+        font-weight: 700;
+        font-size: 100%;
     }
+
+    .sub-heading {
+        font-size: 40%
+    }
+
+    .about-me-title {
+    height: 250px;
+    margin-right: 500px;
+}
+
+.about-me-img{
+    height: 90vh;
+    width: 90vh;
+}
+
+.resume-img {
+    height: 400px;
+}
+
+}
+
+@media (max-width:789px) {
+
+    .navbar {
+        display: flex;
+    }
+
+    .nav-itens:nth-last-child(2) {
+        display:flex;
+        right: 0px;
+        left: 0px;
+    }
+}
+
+@media (max-width:697px) {
+
+.resume-img {
+    height: 340px;
+}
+
+.alert {
+    font-size:80px;
+}
+
+.about-me-p {
+    font-size: 14px
+}
+}
+
+@media (max-width:600px) {
+
+    .resume-img {
+        height: 300px;
+    }
+
+    .name-logo {
+        display: none
+    }
+}
+
+.language {
+    display: none;
 }
 
 .navbar.active {
