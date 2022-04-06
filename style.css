@@ -553,7 +553,21 @@ body {
         height:230px;
     }
 
+    .footer-text {
+        font-size:10px;
+    }
 }
+
+@media (max-width:412px) {
+
+    .resume-img {
+        height: 210px;
+    }
+
+    .alert {
+        font-size:50px;
+    }
+} 
 
 .language {
     display: none;
@@ -562,6 +576,7 @@ body {
 .navbar.active {
     transform: translateY(0);
 }
+
 
 
 
