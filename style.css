@@ -559,6 +559,18 @@ body {
 }
 
 @media (max-width:412px) {
+    .my-resume{
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    .resume-download-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .resume-img {
         height: 210px;
