@@ -135,7 +135,6 @@ body {
     padding-top: 196px;
     font-size: 64px;
     font-weight: bold;
-    
 }
 
 .sub-heading {
@@ -192,7 +191,7 @@ body {
 .about-me-title {
     display: flex;
     font-size: 60px;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
     padding-top:50px;
     padding-left: 220px;
 }
