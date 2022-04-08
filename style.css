@@ -14,6 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     display: flex;
     position: fixed;
@@ -66,6 +70,7 @@ body {
     font-weight: 275;
 }
 
+
 .nav-itens:nth-of-type(1) {
     border-right: 1px solid #00000059;
     padding: 0 40px 0 40px;
@@ -96,6 +101,8 @@ body {
     justify-content: center;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
 }
+
+
 .nav-itens:nth-last-child(2):hover {
     color: white;
     font-weight: 600;
@@ -130,11 +137,33 @@ body {
 }
 
 .title {
+    height: 100vh;
+    /*Esta parte é importante para centralizar*/
     display: flex;
-    justify-content: center;
-    padding-top: 196px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.home-title {
+    width: 770px;
+    animation: typing 1.5s steps(31), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
     font-size: 64px;
-    font-weight: bold;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+    border-color: transparent
+    }
 }
 
 .sub-heading {
@@ -144,6 +173,10 @@ body {
 }
 
 .arrow {
+    width: 100px;
+    margin:  0 auto;
+}
+/* .arrow {
     display: flex;
     flex-direction: column;
     width: 100px;
@@ -152,14 +185,13 @@ body {
     left: 50%;
     top: 550px;
 }
-
+*/
 .arrow-text {
     font-size:16px;
     font-weight: 600;
     color: black;
     position: absolute;
 }
-
 .social-medias {
     display:flex;
     flex-direction: column;
@@ -428,15 +460,6 @@ body {
         height: 15vh;
     }   
 
-    .home h1 {
-        font-weight: 700;
-        font-size: 100%;
-    }
-
-    .sub-heading {
-        font-size: 40%
-    }
-
     .about-me-title {
     height: 250px;
     margin-right: 500px;
@@ -464,7 +487,17 @@ body {
         right: 0px;
         left: 0px;
     }
-}
+
+    .home-title {
+        font-size:50px;
+        width: 500px;
+    }
+
+    .sub-heading {
+        font-size: 30px;
+        padding-left: 120px;
+    }
+} 
 
 @media (max-width:697px) {
 
@@ -489,17 +522,6 @@ body {
 
     .name-logo {
         display: none;
-    }
-
-    .home h1 { 
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .sub-heading {
-        display: flex;
-        margin-right: 10px;
     }
 
     .alert {
@@ -579,7 +601,7 @@ body {
 
 @media (max-width:376px) {
 
-    .home h1 {
+    .home-title {
         display: flex;
         font-size: 50px;
         margin-left: 10px;
