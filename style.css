@@ -139,7 +139,7 @@ body.dark-theme {
     border: none;
 }
 
-.nav-itens:nth-last-child(3) {
+.nav-itens:nth-last-child(2) {
     position: relative;
     height: 37px;
     left: 70px;
@@ -156,7 +156,7 @@ body.dark-theme {
 }
 
 
-.nav-itens:nth-last-child(3):hover {
+.nav-itens:nth-last-child(2):hover {
     color: white;
     font-weight: 600;
     background-color: var(--primary-color-hover) ;
@@ -578,7 +578,7 @@ body.dark-theme {
         height: 50px;
         width: 50px;
         position: absolute;
-        top: 475px;
+        top: 525px;
         left: 20px;
     }
 
