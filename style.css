@@ -27,20 +27,22 @@
 
 /* -------------------------------NAVBAR----------------------------------- */
 
-body {
-    background: var(--color-bg);
-    overflow-x: hidden;
-}
 
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--color-bg);
+    overflow-x: hidden;
 }
 
 .change-theme {
     position: absolute;
     top: 115px;
     right: 20px;
-    font-size: 40px;
+    font-size: 4rem;
     cursor: pointer;
     transition: .3s;
     color: var(--color-text);
@@ -48,7 +50,7 @@ html {
 
 .change-theme:hover {
     color: var(--primary-color-hover);
-    font-size: 50px;
+    font-size: 5rem;
 }
 
 /* DARK THEME COLORS */
@@ -75,7 +77,7 @@ body.dark-theme {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 23px;
+    padding: 2.3rem;
     border-bottom: 1px solid var(--color-border);
     background-color:var(--header-bg);
     box-shadow: none;
@@ -88,7 +90,7 @@ body.dark-theme {
 .logo {
     display: flex;
     flex-direction: row;
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 700;
 }
 
@@ -99,14 +101,14 @@ body.dark-theme {
 
 .logo a:hover {
     color: var(--primary-color-hover);
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 .name-logo {
     position: relative;
     top: 20px;
     left: 5px;
-    font-size:20px;;
+    font-size: 2rem;
     color: var(--color-text);
     font-weight: 300;
 }
@@ -120,36 +122,34 @@ body.dark-theme {
     display: flex;
     align-items: center;
     color: var(--color-text);
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 275;
-    transition: .2s;
+    transition: .3s;
 }
 
 
 .nav-itens:nth-of-type(1) {
     border-right: 1px solid var(--color-border);
-    padding: 0 40px 0 40px;
+    padding: 0 4rem 0 4rem;
 }
 
 .nav-itens:nth-of-type(2){
     border-right: 1px solid var(--color-border);
-    padding: 0 40px 0 40px;
+    padding: 0 4rem 0 4rem;
 }
 
 .nav-itens:nth-of-type(3){
-    padding: 0 40px 0 40px;
+    padding: 0 4rem 0 4rem;
     border-right: 1px solid var(--color-border);
     border: none;
 }
 
 .nav-itens:nth-last-child(2) {
-    position: relative;
-    height: 37px;
-    left: 70px;
     background: var(--primary-color);
+    margin-left: 8rem;
     width: 189px;
     height: 64px;
-    padding: 10px;
+    padding: 1rem;
     border-radius: 50px;
     color: white;
     font-weight: 500;
@@ -161,13 +161,13 @@ body.dark-theme {
 
 .nav-itens:nth-last-child(2):hover {
     color: white;
-    font-weight: 600;
     background-color: var(--primary-color-hover) ;
     box-shadow: none;
 }
 
 .nav-itens:hover {
     color: var(--primary-color-hover);
+    font-size: 2.3rem;
     font-weight:500;
 }
 
@@ -191,12 +191,13 @@ body.dark-theme {
 }
 
 .home-title {
-    width: 770px;
+    width: 30%;
+    min-width: 78rem;
     animation: typing 1.5s steps(31), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    font-size: 64px;
+    font-size: 6.4rem;
 }
 
 @keyframes typing {
@@ -212,13 +213,13 @@ body.dark-theme {
 }
 
 .sub-heading {
-    font-size: 40px;
+    font-size: 4rem;
     display: flex;
-    padding-left: 270px;
+    padding-left: 27rem;
 }
 
 .arrow {
-    font-size:100px;
+    font-size:10rem;
     margin:  0 auto;
 }
 
@@ -228,7 +229,7 @@ body.dark-theme {
 }
 
 .arrow-text {
-    font-size:16px;
+    font-size:1.6rem;
     font-weight: 600;
     color: var(--color-text);
     position: absolute;
@@ -242,9 +243,9 @@ body.dark-theme {
     display:flex;
     flex-direction: column;
     position: fixed;
-    padding-left: 20px;
+    padding-left: 2rem;
     top: 35%;
-    font-size:40px;
+    font-size:4rem;
 }
 
 .social-media-itens {
@@ -253,7 +254,7 @@ body.dark-theme {
 }
 .social-media-itens:hover {
     color: var(--primary-color-hover);
-    font-size: 45px;
+    font-size: 4.5rem;
 } 
 /* ---------------------------- END OF HOME SECTION------------------------------- */
 
@@ -262,10 +263,11 @@ body.dark-theme {
 .about-me {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     font-weight: 700;
-    height: 100%;
+    height: 90%;
     color: var(--color-text);
+    margin-left: 200px;
 }
 
 
@@ -274,15 +276,18 @@ body.dark-theme {
     flex-direction: column;
     margin-top: 40px;
     align-items: center;
+    gap: 5rem;
 }
 
 .about-me-title {
     display: flex;
-    font-size: 100px;
+    font-size: 10rem;
 }
 
 .about-me-p {
     display: flex;
+    font-size: 1.5rem;
+    line-height: 2rem
 
 }
 
@@ -303,7 +308,7 @@ body.dark-theme {
     display: flex;
     justify-content: flex-end;
     align-items:flex-end;
-    margin-top: 200px;
+    margin-top: 20rem;
     height:100vh;
 }
 
@@ -311,88 +316,98 @@ body.dark-theme {
     background-image:linear-gradient(180deg, var(--resume-bg), rgba(255, 255, 255, 0));
     height: 85%;
     width: 85%;
-    border-top: solid 4px;
-    border-left: solid 4px;
-    border-right: solid 4px;
+    max-width: 100rem;
+    border-top: solid 0.4rem;
+    border-left: solid 0.4rem;
+    border-right: solid 0.4rem;
     border-color: var(--resume-border-color);
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-    margin-right: 60px;
+    border-top-left-radius: 2.4rem;
+    border-top-right-radius: 2.4rem;
+    margin-right: 6rem;
+    margin-left: 20rem;
     display: flex;
     align-items: baseline;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 25px;
+    gap: 2.5rem;
 }
 
 .resume-title {
     color: var(--color-text);
-    margin-top: 30px;
-    margin-left: 30px;
-    font-size: 40px;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    font-size: 4rem;
 }
 
 .skills {
-    border: 1px solid var(--resume-border-color);;
-    border-radius: 52px;
-    margin-left: 30px;
+    max-width: 90rem;
+    border: 0.1rem solid var(--resume-border-color);;
+    border-radius: 5.2rem;
+    margin-left: 3rem;
     height: 90%;
     width: 95%;
 }
 
 .skills-itens {
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 350px;
+    height: 100px;
 }
 
 .skill-item {
-    font-size: 100px;
+    font-size: 10rem;
     transition: .3s;
 }
 
 .skill-item:hover {
-    font-size: 110px;
+    font-size: 11rem;
 }
 
 .languages {
+        max-width: 90rem;
     border: 1px solid var(--resume-border-color);;
-    border-radius: 52px;
-    margin-left: 30px;
+    border-radius: 5.2rem;
+    margin-left: 3rem;
     height: 50%;
     width: 95%;
 }
 
 .language-itens {
     display: flex;
-    gap: 30px;
-    margin-left: 40px;
+    gap: 3rem;
+    margin-left: 4rem;
+    width: 250px;
 }
 
 .skill-title {
     color: var(--color-text);
-    margin-top: 20px;
-    margin-left: 40px
+    margin-top: 2rem;
+    margin-left: 4rem;
+    font-size: 2rem;
 }
 
 .language-title {
     color: var(--color-text);
-    margin-top: 20px;
-    margin-left: 40px
+    margin-top: 2rem;
+    margin-left: 4rem;
+    font-size: 2rem;
 }
 
 .resume-download-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 40px;
-    height: 50px;
-    width: 150px;
+    margin-left: 4rem;
+    height: 5rem;
+    width: 15rem;
     background: var(--primary-color);
-    padding: 10px;
-    border-radius: 50px;
+    padding: 1rem;
+    border-radius: 5rem;
     color: white;
+    font-size: 1.5rem;
     font-weight: 700;
-    box-shadow: 0px 8px 10px var(--color-box-shadow);
+    box-shadow: 0px 0.8rem 1rem var(--color-box-shadow);
     transition: .3s;
 }
 
@@ -418,7 +433,7 @@ body.dark-theme {
 }
 
 .alert {
-    font-size:100px;
+    font-size:10rem;
     color: var(--alert-color);
 }
 
@@ -442,13 +457,15 @@ body.dark-theme {
     justify-content:space-around;
     margin-bottom: 10px;
     text-decoration: none;
+    font-size: 1.8rem;
     color: var(--color-text);
     transition: .5s;
+    
 }
 
 .footer-text:hover {
     color: var(--primary-color-hover);
-    font-weight: 1000;
+    font-size: 2rem;
 }
 
 .footer-social-media {
@@ -458,7 +475,7 @@ body.dark-theme {
 /* ---------------------------- END OF FOOTER SECTION------------------------------- */
 
 
-/* ---------------------------- MOBILE ------------------------------- */
+/* ---------------------------- RESPOSIVE ------------------------------- */
 
 
 .mobile-menu {
@@ -474,6 +491,149 @@ body.dark-theme {
     transition: 0.3s;
 }
 
+@media (max-width: 1325px) {
+    
+    .about-me {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: auto;
+    }
+
+    .resume-paper {
+        width:85rem;
+    }
+
+    .skills {
+        max-width: 75rem;
+    }
+
+    .languages {
+        max-width: 75rem;
+    }
+
+    .name-logo{
+        display: none;
+    }
+}
+
+@media (max-width:964px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-itens:nth-of-type(1) {
+        border-right: none;
+    }
+
+    .nav-itens:nth-of-type(2) {
+        border-right: none;
+    }
+    
+    .mobile-menu {
+        display:block;
+    }  
+
+
+    .navbar {
+        display: flex;
+        position: absolute;
+        top: 98px;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background: var(--color-bg);
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-around;   
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-itens {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .name-logo {
+        display: flex;
+    }
+
+    .social-medias{
+        display:none;
+    }
+
+    .resume-paper {
+        width:65rem;
+    }
+
+    .skills {
+        max-width: 55rem;
+    }
+
+    .languages {
+        max-width: 55rem;
+    }
+
+    .footer-social-media {
+        display: flex;
+        gap: 10px;
+        margin-right: 10px;
+        flex-direction: column;
+        font-size: 2.8rem;
+    }
+
+    .footer-social-media-itens {
+        color: var(--color-text);
+    }
+    .footer-social-media-itens:hover {
+        color: var(--primary-color-hover);
+    } 
+
+    .footer {
+        display: flex;
+        justify-content:center;
+        align-items: flex-end;
+        height: 50px;
+        justify-content: space-between;
+    }
+
+
+}
+
+@media (max-width: 846px) {
+
+    html {
+        font-size:55%
+    }
+
+    .home-title {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 52rem;
+    }
+
+    .sub-heading {
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width:438px) {
+
+    .name-logo {
+        display: none;
+    }
+}
+
+/*
 @media (max-width:1373px) {
     .name-logo {
         display: none;
@@ -492,6 +652,7 @@ body.dark-theme {
 
     body {
         overflow-x: hidden;
+        font-size: 50%;
     }
 
     .change-theme {
@@ -515,11 +676,15 @@ body.dark-theme {
     }
 
 
+
+
     .about-me {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        margin-left: 0.5rem;
     }
+
 
 
     .footer-social-media {
@@ -527,7 +692,7 @@ body.dark-theme {
         gap: 10px;
         margin-right: 10px;
         flex-direction: column;
-        font-size:20px;
+        font-size:2.5rem;
     }
     
     .footer-social-media-itens {
@@ -552,7 +717,7 @@ body.dark-theme {
         width: 100%;
         height: 20vh;
         background: var(--color-bg);
-        box-shadow:  0px 50px 50px 0px var(--color-box-shadow);
+        border-left: solid 1px var(--color-border);
         flex-direction: row;
         align-items: center;
         justify-content:center;
@@ -574,11 +739,11 @@ body.dark-theme {
 @media (max-width:853px) {
 
     .nav-itens:nth-last-child(2){
-        padding: 5px;
+        padding: 0.5rem;
     }
 
     .nav-itens {
-        font-size: 15px;
+        font-size: 1.5rem;
     }
 
     .nav-bar {
@@ -587,7 +752,7 @@ body.dark-theme {
     }   
 
     .about-me-title {
-        font-size: 90px;
+        font-size: 9rem;
 }
 
 .about-me-img{
@@ -619,7 +784,7 @@ body.dark-theme {
     }
 
     .nav-itens {
-        font-size:22px;
+        font-size:2.2rem;
         font-weight: 300;
     }
 
@@ -640,13 +805,14 @@ body.dark-theme {
     }
 
     .home-title {
-        font-size:50px;
+        font-size:5rem;
+        margin-left: 100px;
         width: 500px;
     }
 
     .sub-heading {
-        font-size: 30px;
-        padding-left: 120px;
+        font-size: 3rem;
+        padding-left: 200px;
     }
 
     .navbar.active {
@@ -778,6 +944,7 @@ body.dark-theme {
     }   
 
 }
+*/
 
 .navbar.active {
     transform: translateY(0);
