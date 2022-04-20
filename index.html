@@ -19,7 +19,7 @@
 
     <header class="header">
 
-        <h2 class="logo"><a href="#home">Portfolio</a> <div class="name-logo">Kaio Bruno Barbosa Magalhães</div></h2>
+        <h2 class="logo"><a href="#home">Portfolio</a> <div class="name-logo">Kaio Bruno Barbosa Magalhães</div></h2> <!--Div can't be child of a h2-->
 
         <div class="mobile-menu">
             <div class="first-line"></div>
@@ -68,7 +68,7 @@
 
             <div class="title">
 
-                <h1 class="home-title">Front end<div class="sub-heading">Developer and designer</div></h1>
+                <h1 class="home-title">Front end<div class="sub-heading">Developer and designer</div></h1> <!--This div can't be child of a h1-->
 
                 <div class="arrow">
 
@@ -108,9 +108,28 @@
                                 <h3 class="skill-title">Skills:</h3>
 
                                 <div class="skills-itens">
-                                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" title="What is CSS?"><i class='bx bxl-css3 skill-item' style="color: #2196f3;"></i></a>
-                                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" title="What is HTML?"><i class='bx bxl-html5 skill-item' style="color: #f25320;"></i></a>
-                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" title="What is JavaScript?"><i class='bx bxl-javascript skill-item' style="color: #e9d11c;"></i></a>
+
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" title="What is CSS?">
+                                        <figure>
+                                            <i class='bx bxl-css3 skill-item' style="color: #2196f3;"></i>
+                                            <figcaption>CSS</figcaption>
+                                        </figure>
+                                    </a>
+
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" title="What is HTML?">
+                                        <figure>
+                                            <i class='bx bxl-html5 skill-item' style="color: #f25320;"></i>
+                                            <figcaption>HTML</figcaption>
+                                        </figure>
+                                    </a>
+
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" title="What is JavaScript?">
+                                        <figure>
+                                            <i class='bx bxl-javascript skill-item' style="color: #e9d11c;"></i>
+                                            <figcaption>JavaScript</figcaption>
+                                        </figure>
+                                    </a>
+
                                 </div>
 
                             </div>

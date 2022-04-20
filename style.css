@@ -24,6 +24,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#active {
+    color: var(--primary-color);
+}
+
 
 /* -------------------------------NAVBAR----------------------------------- */
 
@@ -36,6 +40,7 @@ html {
 body {
     background: var(--color-bg);
     overflow-x: hidden;
+    
 }
 
 .change-theme {
@@ -323,7 +328,7 @@ body.dark-theme {
     border-color: var(--resume-border-color);
     border-top-left-radius: 2.4rem;
     border-top-right-radius: 2.4rem;
-    margin-right: 6rem;
+    margin-right: 20rem;
     margin-left: 20rem;
     display: flex;
     align-items: baseline;
@@ -337,6 +342,18 @@ body.dark-theme {
     margin-top: 3rem;
     margin-left: 3rem;
     font-size: 4rem;
+}
+
+figure {
+    display: inline-block;
+}
+
+figcaption {
+    display: flex;
+    justify-content:center;
+    color: var(--color-text);
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .skills {
@@ -534,6 +551,11 @@ body.dark-theme {
         display:block;
     }  
 
+    .change-theme {
+        margin-right: 30rem;
+        margin-top: 40rem;
+    }
+
 
     .navbar {
         display: flex;
@@ -545,12 +567,13 @@ body.dark-theme {
         background: var(--color-bg);
         flex-direction: column;
         align-items:center;
-        justify-content: space-around;   
+        justify-content: space-evenly;   
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }
 
     .nav-itens {
+        margin-bottom: 10rem;
         margin-left: 0;
         opacity: 0;
     }
@@ -606,6 +629,15 @@ body.dark-theme {
 
 }
 
+@media (max-width: 1097px){
+
+    .resume-paper {
+        display: none;
+    }
+
+}
+
+
 @media (max-width: 846px) {
 
     html {
@@ -624,337 +656,13 @@ body.dark-theme {
         padding-left: 0;
     }
 
-}
-
-@media (max-width: 778px) {
-
-    .resume-paper {
-        display: none;
-    }
-
-    
-
-}
-
-@media (max-width:438px) {
-
-    .name-logo {
-        display: none;
-    }
-}
-
-/*
-@media (max-width:1373px) {
-    .name-logo {
-        display: none;
-    }
-    
-    .header {
-        display: flex;
-    }
-    .projects {
-        width: 100vw;
-    }
-}
-
-
-@media (max-width:1066px) {
-
-    body {
-        overflow-x: hidden;
-        font-size: 50%;
-    }
-
     .change-theme {
-        margin-top:40px;
-    }
-
-    .social-medias{
-        display:none;
-    }
-
-    .name-logo {
-        display: flex;
-        flex-direction:row;
-    }
-
-    .header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: flex-end;
-    }
-
-
-
-
-    .about-me {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        margin-left: 0.5rem;
-    }
-
-
-
-    .footer-social-media {
-        display: flex;
-        gap: 10px;
-        margin-right: 10px;
-        flex-direction: column;
-        font-size:2.5rem;
-    }
-    
-    .footer-social-media-itens {
-        color: var(--color-text);
-    }
-    .footer-social-media-itens:hover {
-        color: var(--primary-color-hover);
-    } 
-
-    .footer {
-        display: flex;
-        justify-content:center;
-        align-items: flex-end;
-        height: 50px;
-        justify-content: space-between;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 11vh;
-        right: 0;
-        width: 100%;
-        height: 20vh;
-        background: var(--color-bg);
-        border-left: solid 1px var(--color-border);
-        flex-direction: row;
-        align-items: center;
-        justify-content:center;
-        transform: translatey(-200%);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .nav-itens {
-        margin-left: 0;
-        opacity: 0;
-    }
-
-    .mobile-menu {
-        display:block;
-    }
-
-}
-
-@media (max-width:853px) {
-
-    .nav-itens:nth-last-child(2){
-        padding: 0.5rem;
-    }
-
-    .nav-itens {
-        font-size: 1.5rem;
-    }
-
-    .nav-bar {
-        display:flex;
-        height: 15vh;
-    }   
-
-    .about-me-title {
-        font-size: 9rem;
-}
-
-.about-me-img{
-    height: 90vh;
-    width: 90vh;
-}
-
-}
-
-@media (max-width:781px) {
-
-    body {
-        overflow-x: hidden;
-    }
-
-    .navbar {
-        display: flex;
-        position: absolute;
-        top: 98px;
-        right: 0;
-        width: 50vw;
-        height: 90vh;
-        background: var(--color-bg);
-        flex-direction: column;
-        align-items:center;
-        justify-content: space-around;   
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-
-    .nav-itens {
-        font-size:2.2rem;
-        font-weight: 300;
-    }
-
-    .nav-itens:nth-of-type(1) {
-        border-right: none;
-    }
-
-    .nav-itens:nth-of-type(2) {
-        border-right: none;
-    }
-
-    .change-theme {
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        top: 76%;
-        left: 20px;
-    }
-
-    .home-title {
-        font-size:5rem;
-        margin-left: 100px;
-        width: 500px;
-    }
-
-    .sub-heading {
-        font-size: 3rem;
-        padding-left: 200px;
-    }
-
-    .navbar.active {
-        transform: translateX(0);
+        margin-right: 35rem;
+        margin-top: 46rem;
     }
 
 } 
 
-@media (max-width:697px) {
-
-.navbar {
-    width: 60vw;
-}
-
-.alert {
-    font-size:80px;
-}
-
-.about-me-p {
-    font-size: 14px;
-}
-}
-
-@media (max-width:600px) {
-
-    .navbar {
-        width: 70vw;
-    }
-
-
-    .name-logo {
-        display: none;
-    }
-
-    .alert {
-        font-size:60px;
-    }
-}
-
-@media (max-width:549px){
-
-    .about-me-img {
-        height: 70vh;
-        width: 70vh;
-    }
-
-    .about-me-p {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        font-size:12px;
-    }
-
-    .navbar {
-        width: 80vw;
-    }
-
-}
-
-@media (max-width:473px) {
-
-    .navbar {
-        width: 90vw;
-    }
-
-    .about-me-title {
-        font-size: 70px;
-    }
-
-    .about-me-p {
-        font-size:10px;
-    }
-
-
-}
-
-@media (max-width:420px) {
-
-
-    .alert {
-        font-size:50px;
-    }
-
-    .footer-text {
-        font-size: 15px;
-    }
-
-} 
-
-@media (max-width:376px) {
-
-    .navbar {
-        width: 90vw;
-    }
-
-
-    .about-me-img {
-        height: 60vh;
-        width: 60vh;
-    }
-
-    .about-me-title {
-        font-size: 60px;
-    }
-
-    .about-me-p {
-        font-size: 9px;
-    }
-
-    .footer-text {
-        font-size: 13px;
-    }
-
-}
-
-@media (max-width:321px) {
-
-    .navbar {
-        width: 100vw;
-    }
-
-    .about-me-p {
-        font-size: 8px;
-    }
-
-
-    .alert {
-        font-size: 45px;
-    }   
-
-}
-*/
 
 .navbar.active {
     transform: translateY(0);
