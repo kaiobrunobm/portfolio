@@ -463,7 +463,6 @@ figcaption {
     width: 275px;
     height: 253px;
     margin-top: 10rem;
-    /* border: 1px solid var(--color-border); */
     perspective: 1000px;
 }
 
@@ -492,9 +491,10 @@ figcaption {
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color: #bbb;
-    color: black;
+    background-color: transparent;
+    color: var(--color-text);
     font-size: 4rem;
+    cursor: pointer;
 }
 
 .flip-box-back {
@@ -505,6 +505,7 @@ figcaption {
     color: var(--color-text);
     background-color:transparent;
     font-size:5rem;
+    cursor: pointer;
 }
 
 .project-arrow{
