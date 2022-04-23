@@ -32,8 +32,29 @@
             <a class="nav-itens" href="#about-me">About me</a>
             <a class="nav-itens" href="#resume">Resume</a>
             <a class="nav-itens" href="#projects">Projects</a>
-            <a class="nav-itens" href="">Contact me</a>
-    
+            <button class="contact-me-btn" onclick="showModal()">Contact me</button>
+
+            <div class="contact-me-form" id="modal">
+                <div class="form-content">
+                    <span class="modal-close-btn" onclick="hideModal()" ><i class='bx bx-x'></i></span>
+                    <h2 class="form-title">Contact me</h2>
+                    <form action="https://formsubmit.co/bmkaiobruno@gmail.com" method="POST" class="form">
+
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="exemple@exemple.com">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Write me" cols="30" rows="10" required></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- abaixo temos a pagina de agradecimento para o formulario -->
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> 
+                        <button type="submit" class="form-send-btn"><i class='bx bxs-send' ></i></button>
+
+                    </form>
+                </div>
+            </div>
+
             <i class="ri-moon-line change-theme" id="dark-mode-btn"></i>
             
         </nav>
@@ -83,7 +104,6 @@
             </div>
 
             </section>
-            
         
 
         <section class="about-me" id="about-me">
@@ -229,6 +249,7 @@
 
         </div>
     </footer>
+    <script src="./js/contactme.js"></script>
     <script src="./js/mobilejs.js"></script>
     <script src="./js/darktheme.js"></script>
 
