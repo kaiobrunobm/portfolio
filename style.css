@@ -599,7 +599,6 @@ figcaption {
     visibility: visible;
     transform: scale(1.0);
     overflow-x: hidden;
-    header: hidden;
 }
 
 .form-title {
