@@ -13,7 +13,7 @@
         --primary-color-hover:#0e0bd4c7;
         --color-box-shadow: rgba(0, 0, 0, 0.25);
         --color-border : #00000059;
-        --alert-color : rgba(255, 0, 0, 0.253);
+        --hover-primary-bg:#ece6e6;
     
 }
 *{
@@ -22,6 +22,10 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -36,7 +40,6 @@ html {
 body {
     background: var(--color-bg);
     overflow-x: hidden;
-    
 }
 
 .change-theme {
@@ -54,6 +57,87 @@ body {
     font-size: 5rem;
 }
 
+.multi-language{
+    position: absolute;
+    top: 115px;
+    right: 90px;
+}
+
+.language-selected {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language-selected:before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/english.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.language-selected.change-en:before{
+    background-image: url(/img/english.svg);
+}
+
+.language-selected.change-br:before {
+    background-image: url(/img/brasil.svg);
+}
+
+
+.multi-language ul {
+    position: absolute;
+    width: 70px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--color-border);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+    display: none;
+}
+
+.multi-language ul li {
+    list-style: none;
+}
+
+.multi-language ul li:hover {
+    background-color: var(--hover-primary-bg);
+    border-radius:10px;
+}
+
+.multi-language ul li a {
+    display: block;
+    color: #252525;
+    padding: 5px 10px;
+}
+
+.multi-language ul li a:before {
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+a.en:before{
+    background-image: url(/img/english.svg);
+}
+
+a.br:before{
+    background-image: url(/img/brasil.svg);
+}
+
+.multi-language:hover ul {
+    display: block
+}
+
+
+
 /* DARK THEME COLORS */
 body.dark-theme {
     --color-bg: #02030B;
@@ -65,7 +149,7 @@ body.dark-theme {
     --primary-color-hover: #03bcdd;
     --color-box-shadow: rgba(255, 255, 255, 0.055);
     --color-border : #ffffff59;
-    --alert-color : rgb(179, 46, 46);
+    --hover-primary-bg:#444444;
 }
 
 .header {
