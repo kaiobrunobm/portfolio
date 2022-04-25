@@ -78,7 +78,7 @@ body {
     background-image: url(https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png);
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-right: 10px;
 }
 
