@@ -18,8 +18,8 @@ $(function() {
     $(".soon-project").text("Soon");
     $(".calculator-description").text("IOS Calculator replica");
     $(".footer-text ").text("Designed & Built by Kaio Bruno");
-    $(".language-selected").removeClass("change-br");
-    $(".language-selected").addClass(".change-en");
+    $(".language-selected").removeclass("change-br");
+    $(".language-selected").addClass("change-en");
     });
 });
 $(function() {

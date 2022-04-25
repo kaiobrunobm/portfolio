@@ -75,18 +75,19 @@ body {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: url(/img/english.svg);
+    background-image: url(https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png);
     background-size: contain;
     background-repeat: no-repeat;
+    margin-top: 10px;
     margin-right: 10px;
 }
 
-.language-selected #change-en:before{
-    background-image: url(/img/english.svg);
+.language-selected .change-en:before{
+    background-image: url(https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png);
 }
 
-.language-selected #change-br:before {
-    background-image: url(/img/brasil.svg);
+.language-selected .change-br:before {
+    background-image: url(https://cdn.countryflags.com/thumbs/brazil/flag-round-250.png);
 }
 
 
@@ -97,6 +98,7 @@ body {
     border: 1px solid var(--color-border);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
     border-radius:10px;
+    padding-top: 10px;
     display: none;
 }
 
@@ -125,12 +127,12 @@ body {
     margin-right: 10px;
 }
 
-.en:before{
-    background-image: url(/img/english.svg);
+a.en:before{
+    background-image: url(https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png);
 }
 
-.br:before{
-    background-image: url(/img/brasil.svg);
+a.br:before{
+    background-image: url(https://cdn.countryflags.com/thumbs/brazil/flag-round-250.png);
 }
 
 .multi-language:hover ul {
