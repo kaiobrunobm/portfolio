@@ -2,10 +2,7 @@ $(function() {
     $(".en").click(function() { 
         // HEADER
     $(".logo-big").text("Portifolio");
-    $(".navbar").children().eq(1).text("About me");
-    $(".navbar").children().eq(2).text("Resume");
-    $(".navbar").children().eq(3).text("Projects");
-    $(".navbar").children().eq (4).text("Contact me");
+    $(".navbar").children().eq (1).text("Contact me");
 
         // HOME
     $(".sub-heading").text("Developer and designer");
@@ -13,7 +10,7 @@ $(function() {
 
         // ABOUT ME
     $(".about-me-title").text("About me");
-    
+    $(".about-me-p").text("My name is Kaio Bruno I'm 18 years old and I'm fascinated by technology. I graduated in IT, and today Front End student. I am a speaker of English I am a language lover, and I want to learn several languages and who knows live outside Brazil which is where I was born and live at this moment.");
 
         // RESUME
     $(".resume-title").text("Resume");
@@ -49,10 +46,7 @@ $(function() {
 
         // HEADER
     $(".logo-big").text("Portifólio");
-    $(".navbar").children().eq(1).text("Sobre mim");
-    $(".navbar").children().eq(2).text("Currículo");
-    $(".navbar").children().eq(3).text("Projetos");
-    $(".navbar").children().eq(4).text("Contate-me");
+    $(".navbar").children().eq(1).text("Contate-me");
 
     // HOME
     $(".sub-heading").text("Desenvolvedor e designer");
@@ -60,7 +54,7 @@ $(function() {
 
         // ABOUT ME
     $(".about-me-title").text("Sobre mim");
-
+    $(".about-me-p").text("Meu nome é Kaio Bruno, tenho 18 anos e sou fascinado por tecnologia. Eu me formei em TI e hoje sou estudante de front end. Sou falante de inglês e um amante de idiomas, quero aprender vários idiomas e quem sabe morar fora do Brasil, onde eu nasci e moro neste momento.");
 
         // RESUME
     $(".resume-title").text("Currículo");

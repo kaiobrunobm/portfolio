@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <meta name="description" content="Portifolio of a Front End Student">
     
     <!-- Icons -->
@@ -20,50 +20,63 @@
     <!-- HEADER -->
     <header class="header" id="header">
 
-        <!-- Navgation section -->
-        <nav class="navbar">
-            <!-- Header logo -->
-            <h2 class="logo"><a href="#home" class="logo-big ">Portfolio</a> <span class="name-logo">Kaio Bruno Barbosa Magalhães</span></h2>
+        <!-- Header logo -->
+        <h2 class="logo"><a href="#home" class="logo-big ">Portfolio</a> <span class="name-logo">Kaio Bruno Barbosa Magalhães</span></h2>
 
+                    <!-- Change language button -->
+                    <div class="multi-language">
+                        <div class="language-selected">
+                            <!-- When the language is selected change the flag in the page -->
+                        </div>
+                        
+                        <!-- Language options -->
+                        <ul>
+                        <li><a href="#" class="en"></a></li>
+                        <li><a href="#" class="br"></a></li>
+                        </ul>
+                        
+                        </div>
+
+            <!-- Theme changer button -->
+            <i class="ri-moon-line change-theme" id="dark-mode-btn"></i>
+                    
+        <!-- Navgation section -->
+        <nav class="navbar">            
             <!-- Nav links -->
-            <a class="nav-itens" href="#about-me">About me</a>
-            <a class="nav-itens" href="#resume">Resume</a>
-            <a class="nav-itens" href="#projects">Projects</a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    
+                <li>
+                    <a class="nav-itens" href="#about-me">
+                        <i class='bx bx-user nav-icon'></i>
+                        <span class="nav-name about-me-link">About me</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-itens" href="#resume">
+                        <i class='bx bx-receipt nav-icon'></i>
+                        <span class="nav-name resume-link">Resume</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-itens" href="#projects">
+                        <i class='bx bx-briefcase-alt nav-icon'></i>
+                        <span class="nav-name projects-link">Projects</span>
+                        </a>
+                </li>
+                <li>
+                    <a class="nav-itens contact-me-mobile" href="#contact-me" onclick="showModal()">
+                    <i class='bx bx-comment-dots nav-icon'></i>
+                    <span class="nav-name contact-me-link">Contact me</span>
+                    </a>
+                </li>
+
+                </ul>
+            </div>
             <!-- Button will show the form -->
             <button class="contact-me-btn" onclick="showModal()">Contact me</button>
 
-            <div class="mobile-nav-menu" id="mobile-nav-menu">
-                <ul class="nav-list">
-
-                    <li class="nav-item">
-                        <a href="#about-me" class="nav-link ">
-                        <i class='bx bx-user nav-icon'></i>
-                        <span class="nav-name">About me</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">
-                        <i class='bx bx-receipt nav-icon'></i>
-                        <span class="nav-name">Resume</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">
-                        <i class='bx bx-briefcase-alt nav-icon'></i>
-                        <span class="nav-name">Projects</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#contact-me" onclick="showModal()" class="nav-link">
-                        <i class='bx bx-comment-dots nav-icon'></i>
-                        <span class="nav-name">Contact me</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
             <!-- Form -->
             <div class="contact-me-form" id="modal">
                 <div class="form-content">
@@ -86,29 +99,12 @@
                         <input type="hidden" name="_captcha" value="false">
                         <!-- Bellow a form to thank the message  -->
                         <input type="hidden" name="_next" value="http://127.0.0.1:5501/form.html"> 
-                        <button type="submit" class="form-send-btn"><i class='bx bxs-send' ></i></button>
+                        <button type="submit" class="form-send-btn"><i class='bx bxs-send form-send-icon' ></i></button>
 
                     </form>
                 </div>
             </div>
 
-            <!-- Theme changer button -->
-            <i class="ri-moon-line change-theme" id="dark-mode-btn"></i>
-
-            <!-- Change language button -->
-            <div class="multi-language">
-                <div class="language-selected">
-                    <!-- When the language is selected change the flag in the page -->
-                </div>
-                
-                <!-- Language options -->
-                <ul>
-                <li><a href="#" class="en"></a></li>
-                <li><a href="#" class="br"></a></li>
-                </ul>
-                
-                </div>
-            
         </nav>
     </header>
 
@@ -153,7 +149,7 @@
                     <p class="arrow-text">Scroll down</p>
                     <a href="#about-me">
                         
-                        <i class='bx bxs-chevron-down bx-fade-down-hover'></i>
+                        <i class='bx bxs-chevron-down bx-fade-down-hover arrow-icon'></i>
                     </a>
     
                 </div>
@@ -168,11 +164,28 @@
                 <div class="about-me-text" >
                     <h2 class="about-me-title">About me</h2>
 
-                    <p class="about-me-p">My name is Kaio Bruno I'm 18 years old and I'm fascinated by technology. <br> I graduated in IT, and today Front End student. <br> I am a speaker of English I am a language lover, and I want to learn <br> several languages and who knows live outside Brazil which is where I was <br> born and live at this moment. </p>
+                    <p class="about-me-p">My name is Kaio Bruno I'm 18 years old and I'm fascinated by technology. I graduated in IT, and today Front End student. I am a speaker of English I am a language lover, and I want to learn  several languages and who knows live outside Brazil which is where I was born and live at this moment. </p>
                 </div>
 
                 <!-- Will be my Photo -->
-            <img class="about-me-img" src="./img/myphoto.svg" alt="Eu, Kaio Bruno">
+                <!-- Change for a bether photo -->
+            <div class="about-me-img">
+                <svg class="about-me-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        <image class="about-me-blob-img" y="-13" xlink:href="./img/myphoto.jpg"/>
+                    </g>
+                </svg>
+            </div>
         </section>
 
         <!-- RESUME -->
@@ -229,13 +242,12 @@
 <section class="projects" id="projects">
 
 
-
 <!-- Projects cards -->
 <table>
     <thead>
-        <div class="projects-title">
-            <h2>Projects</h2>
-        </div>
+            <div class="projects-title">
+        <h2>Projects</h2>
+    </div>
     </thead>
     <tbody>
 
