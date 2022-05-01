@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en, pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,37 +11,80 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     
 
-
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Kaio Bruno Portfolio</title>
 </head>
 <body>
 
+    <!-- HEADER -->
     <header class="header" id="header">
 
-        
+        <!-- Navgation section -->
         <nav class="navbar">
-            <h2 class="logo"><a href="#home" class="logo-big active-link">Portfolio</a> <div class="name-logo">Kaio Bruno Barbosa Magalhães</div></h2> <!--Div can't be child of a h2-->
+            <!-- Header logo -->
+            <h2 class="logo"><a href="#home" class="logo-big ">Portfolio</a> <span class="name-logo">Kaio Bruno Barbosa Magalhães</span></h2>
 
+            <!-- Nav links -->
             <a class="nav-itens" href="#about-me">About me</a>
             <a class="nav-itens" href="#resume">Resume</a>
             <a class="nav-itens" href="#projects">Projects</a>
+            <!-- Button will show the form -->
             <button class="contact-me-btn" onclick="showModal()">Contact me</button>
 
+            <div class="mobile-nav-menu" id="mobile-nav-menu">
+                <ul class="nav-list">
+
+                    <li class="nav-item">
+                        <a href="#about-me" class="nav-link ">
+                        <i class='bx bx-user nav-icon'></i>
+                        <span class="nav-name">About me</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">
+                        <i class='bx bx-receipt nav-icon'></i>
+                        <span class="nav-name">Resume</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">
+                        <i class='bx bx-briefcase-alt nav-icon'></i>
+                        <span class="nav-name">Projects</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact-me" onclick="showModal()" class="nav-link">
+                        <i class='bx bx-comment-dots nav-icon'></i>
+                        <span class="nav-name">Contact me</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Form -->
             <div class="contact-me-form" id="modal">
                 <div class="form-content">
+                    <!-- "Button" will close the form -->
                     <span class="modal-close-btn" onclick="hideModal()" ><i class='bx bx-x'></i></span>
+                    <!-- Form title -->
                     <h2 class="form-title">Contact me</h2>
-                    <form action="https://formsubmit.co/bmkaiobruno@gmail.com" method="POST" class="form">
+                    <!-- Form submite make the message come to my email -->
+                    <form action="https://formsubmit.co/kaiobrunodev@gmail.com" method="POST" class="form">
 
                         <label for="name" class="form-input-name">Name</label>
                         <input type="text" name="name" id="name" required>
+
                         <label for="email" class="form-input-email">Email</label>
                         <input type="email" name="email" id="email" required placeholder="exemple@exemple.com">
+
                         <label for="message" class="form-input-message">Message</label>
                         <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+
                         <input type="hidden" name="_captcha" value="false">
-                        <!-- abaixo temos a pagina de agradecimento para o formulario -->
+                        <!-- Bellow a form to thank the message  -->
                         <input type="hidden" name="_next" value="http://127.0.0.1:5501/form.html"> 
                         <button type="submit" class="form-send-btn"><i class='bx bxs-send' ></i></button>
 
@@ -49,28 +92,30 @@
                 </div>
             </div>
 
+            <!-- Theme changer button -->
             <i class="ri-moon-line change-theme" id="dark-mode-btn"></i>
 
-
+            <!-- Change language button -->
             <div class="multi-language">
                 <div class="language-selected">
-                    <p class="flag"></p>
+                    <!-- When the language is selected change the flag in the page -->
                 </div>
-
+                
+                <!-- Language options -->
                 <ul>
                 <li><a href="#" class="en"></a></li>
                 <li><a href="#" class="br"></a></li>
                 </ul>
                 
                 </div>
-
-            </div>
             
         </nav>
     </header>
 
+    <!-- MAIN CONTENT -->
     <main class="main">
 
+        <!-- Social media buttons -->
         <div class="social-medias">
 
             <a href="https://www.instagram.com/kaiobrunodev/" target="_blank" class="social-media-itens">
@@ -94,12 +139,15 @@
             </a>
 
             </div>
+
+            <!-- HOME -->
             <section class="home" id="home">
 
             <div class="title">
+                <!-- Home title -->
+                <h1 class="home-title" id="title">Front end<span class="sub-heading">Developer and designer</span></h1>
 
-                <h1 class="home-title" id="title">Front end<div class="sub-heading">Developer and designer</div></h1> <!--This div can't be child of a h1-->
-
+                <!-- Arrow to scroll down when you click -->
                 <div class="arrow">
 
                     <p class="arrow-text">Scroll down</p>
@@ -115,123 +163,138 @@
             </section>
         
 
+        <!-- ABOUT ME -->
         <section class="about-me" id="about-me">
                 <div class="about-me-text" >
                     <h2 class="about-me-title">About me</h2>
+
                     <p class="about-me-p">My name is Kaio Bruno I'm 18 years old and I'm fascinated by technology. <br> I graduated in IT, and today Front End student. <br> I am a speaker of English I am a language lover, and I want to learn <br> several languages and who knows live outside Brazil which is where I was <br> born and live at this moment. </p>
                 </div>
 
+                <!-- Will be my Photo -->
             <img class="about-me-img" src="./img/myphoto.svg" alt="Eu, Kaio Bruno">
         </section>
 
+        <!-- RESUME -->
+<section class="resume" id="resume">
+
+    <!-- Resume section -->
+    <div class="resume-paper">
+
+    <h2 class="resume-title">Resume</h2>
+    <!-- Button will download my resume -->
+    <a class="resume-download-btn" href="PDF" download="My resume">Download</a>
+
+    <!-- My skills in my resume -->
+    <div class="skills">
+        <h3 class="skill-title">Skills:</h3>
+
+        <div class="skills-itens">
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" title="What is CSS?">
+                <figure>
+                    <i class='bx bxl-css3 skill-item' style="color: #2196f3;"></i>
+                    <figcaption>CSS</figcaption>
+                </figure>
+            </a>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" title="What is HTML?">
+                <figure>
+                    <i class='bx bxl-html5 skill-item' style="color: #f25320;"></i>
+                    <figcaption>HTML</figcaption>
+                </figure>
+            </a>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" title="What is JavaScript?">
+                <figure>
+                    <i class='bx bxl-javascript skill-item' style="color: #e9d11c;"></i>
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+            </a>
+
+        </div>
+
+    </div>
+        <div class="languages">
+                <!-- Languages that i speak -->
+            <h3 class="language-title">Languages:</h3>
+            <div class="language-itens">
+                <img src="./img/brasil.svg" alt="Brazil flag">
+                <img src="./img/united-states.svg" alt="US flag">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
 
 
-        <section class="resume" id="resume">
 
-                        <div class="resume-paper">
+<!-- Projects cards -->
+<table>
+    <thead>
+        <div class="projects-title">
+            <h2>Projects</h2>
+        </div>
+    </thead>
+    <tbody>
 
-                            <h2 class="resume-title">Resume</h2>
-                            <a class="resume-download-btn" href="PDF" download="My resume">Download</a>
+        <tr>
+            <td>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <figure>
+                            <img src="./img/IOSreplica.png" alt="IOS Calculator Imagem">
+                            <figcaption class="calculator-description">IOS Calculator replica</figcaption>
+                        </figure>
+                    </div>
 
-                            <div class="skills">
-                                <h3 class="skill-title">Skills:</h3>
+                    <div class="flip-box-back">
+                            <a href="https://kaiobrunobm.github.io/ios-calculator/" target="_blank"><i class='bx bxs-right-arrow-circle bx-fade-right-hover project-arrow'></i></a>
+                    </div>
+                </div>
+            </div>
+            </td>
+        </tr>
 
-                                <div class="skills-itens">
-
-                                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" title="What is CSS?">
-                                        <figure>
-                                            <i class='bx bxl-css3 skill-item' style="color: #2196f3;"></i>
-                                            <figcaption>CSS</figcaption>
-                                        </figure>
-                                    </a>
-
-                                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" title="What is HTML?">
-                                        <figure>
-                                            <i class='bx bxl-html5 skill-item' style="color: #f25320;"></i>
-                                            <figcaption>HTML</figcaption>
-                                        </figure>
-                                    </a>
-
-                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" title="What is JavaScript?">
-                                        <figure>
-                                            <i class='bx bxl-javascript skill-item' style="color: #e9d11c;"></i>
-                                            <figcaption>JavaScript</figcaption>
-                                        </figure>
-                                    </a>
-
-                                </div>
-
-                            </div>
-                            <div class="languages">
-                                <h3 class="language-title">Languages:</h3>
-                                <div class="language-itens">
-                                    <img src="./img/brasil.svg" alt="Brazil flag">
-                                    <img src="./img/united-states.svg" alt="US flag">
-                                </div>
-                            </div>
+        <tr>
+            <td>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h2 class="project">Project</h2>
                         </div>
-        </section>
-
-        <section class="projects" id="projects">
-
-
-                <h2 class="projects-title">Projects</h2>
-
-
-            <table>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="flip-box">
-                                <div class="flip-box-inner">
-                                    <div class="flip-box-front">
-                                        <h2 class="project">Project</h2>
-                                    </div>
-                                    <div class="flip-box-back">
-                                        <h2 class="soon-project">SOON</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <figure>
-                                        <img src="./img/IOS replica.png" alt="IOS Calculator Imagem" height="auto" width="275px">
-                                        <figcaption class="calculator-description">IOS Calculator replica</figcaption>
-                                    </figure>
-                                </div>
-
-                                <div class="flip-box-back">
-                                        <a href="https://kaiobrunobm.github.io/ios-calculator/" target="_blank"><i class='bx bxs-right-arrow-circle bx-fade-right-hover project-arrow'></i></a>
-                                </div>
-                            </div>
+                        <div class="flip-box-back">
+                            <h2 class="soon-project">SOON</h2>
                         </div>
-                    </tr>
+                    </div>
+                </div>
+            </td>
+        </tr>
 
-                    <tr>
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                                <div class="flip-box-front">
-                                    <h2 class="project">Project</h2>
-                                </div>
-                                <div class="flip-box-back">
-                                    <h2 class="soon-project">SOON</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </tr>
-                </tbody>
-            </table>
+        <tr>
+            <td>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2 class="project">Project</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2 class="soon-project">SOON</h2>
+                    </div>
+                </div>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
         </section>
 
     </main>
 
     <footer class="footer">
+        <!-- Repository link -->
         <p><a class="footer-text" href="https://github.com/kaiobrunobm/portifolio" target="_blank" >&copy; Designed & Built by Kaio Bruno</a></p>
 
         <!-- Responsive footer social media -->
@@ -259,6 +322,7 @@
 
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/headershadow.js"></script>
     <script src="./js/activesection.js"></script>

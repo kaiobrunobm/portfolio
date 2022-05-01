@@ -23,7 +23,7 @@ $(function() {
 
         // PROJECTS
     $(".projects-title").text("Projects");
-    $(".project").text("Projetc");
+    $(".project").text("Project");
     $(".soon-project").text("Soon");
     $(".calculator-description").text("IOS Calculator replica");
 
