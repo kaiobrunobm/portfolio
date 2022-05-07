@@ -957,6 +957,7 @@ font-size: 1.6rem;
     
     .resume-title {
         font-size: 4rem;
+        margin-left: 0px;
         display: flex;
         align-self: center
     }
@@ -964,15 +965,18 @@ font-size: 1.6rem;
     .skills {
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
         align-content: flex-start;
         margin-bottom: 15rem;
         max-width: 44rem;
         height: 10%;
         justify-content: flex-start;
         align-items: center;
+        margin-left: 0px;
         border: none;
+    }
 
+    .skills-itens {
+        margin-left: 0px;
     }
 
     .skill-title {
@@ -1013,6 +1017,7 @@ font-size: 1.6rem;
         width: 22rem;
         font-size: 2.5rem;
         margin-bottom: 5rem;
+        margin-left: 0px;
     }
 }
 
