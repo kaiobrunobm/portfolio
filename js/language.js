@@ -37,6 +37,10 @@ $(function() {
     $(".form-input-email").text("Email");
     $(".form-input-message").text("Message");
 
+    // THANKS PAGE
+    $(".title-thanks").text("Thank you");
+    $(".thanks-text").text("Thank you for sending me an email, I will be responding soon");
+
 
     $(".language-selected").removeClass("change-br");
     $(".language-selected").addClass("change-en");
@@ -85,7 +89,10 @@ $(function() {
     $(".form-input-name").text("Nome");
     $(".form-input-email").text("Email");
     $(".form-input-message").text("Mensagem");
-
+    
+    // THANKS PAGE
+    $(".title-thanks").text("Obrigado");
+    $(".thanks-text").text("Obrigado por me mandar um e-mail, Irei responder em breve.");
 
     $(".language-selected").removeClass("change-en");
     $(".language-selected").addClass("change-br");
