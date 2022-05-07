@@ -3,6 +3,10 @@ $(function() {
         // HEADER
     $(".logo-big").text("Portifolio");
     $(".navbar").children().eq (1).text("Contact me");
+    $(".nav-name").eq(0).text("About me");
+    $(".nav-name").eq(1).text("Resume");
+    $(".nav-name").eq(2).text("Projects");
+    $(".nav-name").eq(3).text("Contact me");
 
         // HOME
     $(".sub-heading").text("Developer and designer");
@@ -47,6 +51,11 @@ $(function() {
         // HEADER
     $(".logo-big").text("Portifólio");
     $(".navbar").children().eq(1).text("Contate-me");
+    $(".nav-name").eq(0).text("Sobre mim");
+    $(".nav-name").eq(1).text("Currículo");
+    $(".nav-name").eq(2).text("Projetos");
+    $(".nav-name").eq(3).text("Contate-me");
+
 
     // HOME
     $(".sub-heading").text("Desenvolvedor e designer");
