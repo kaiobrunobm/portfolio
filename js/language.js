@@ -59,8 +59,8 @@ $(function() {
         // RESUME
     $(".resume-title").text("Currículo");
     $(".resume-download-btn").text("Baixar");
-    $(".skill-title").text("Habilidades:");
-    $(".language-title").text("Idiomas:");
+    $(".skill-title").text("Habilidades");
+    $(".language-title").text("Idiomas");
 
         // PROJECTS
     $(".projects-title").text("Projetos");

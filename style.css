@@ -565,12 +565,13 @@ figcaption {
     justify-content:center;
     align-items:center;
     flex-direction: column;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
 }
 
 .projects-title {
     font-size: clamp(6rem, 10vw, 9rem); 
     color: var(--color-text);
+    margin-top: 12rem;
 }
 
 .flip-box {
@@ -934,16 +935,15 @@ font-size: 1.6rem;
 
     .projects {
         margin-top: 30rem;
-        margin-bottom: 30rem;
     }
 
     /* RESUME MOBILE */
 
     .resume {
         display:flex;
-
         width: 100%;
     }
+    
     .resume-paper {
         display: flex;
         flex-direction: column;
@@ -952,7 +952,7 @@ font-size: 1.6rem;
         background: none;
         align-items: center;
         margin: auto;
-        margin-top: 12rem;
+        margin-top:12rem;
     }
     
     .resume-title {
