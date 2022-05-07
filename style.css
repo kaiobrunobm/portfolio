@@ -89,11 +89,11 @@ body {
     margin-right: 10px;
 }
 
-.language-selected .change-en:before{
+.language-selected.change-en:before{
     background-image: url(https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png);
 }
 
-.language-selected .change-br:before {
+.language-selected.change-br:before {
     background-image: url(https://cdn.countryflags.com/thumbs/brazil/flag-round-250.png);
 }
 

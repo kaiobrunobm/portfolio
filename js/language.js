@@ -34,7 +34,7 @@ $(function() {
     $(".form-input-message").text("Message");
 
 
-    $(".language-selected").removeclass("change-br");
+    $(".language-selected").removeClass("change-br");
     $(".language-selected").addClass("change-en");
 
 
@@ -79,7 +79,7 @@ $(function() {
 
 
     $(".language-selected").removeClass("change-en");
-    $(".language-selected").addClass(".change-br");
+    $(".language-selected").addClass("change-br");
     
     });
 });
